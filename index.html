@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<meta name="theme-color" content="#050608">
+<title>Máquina de Sites | Descubra se você está pronto</title>
+<meta name="description" content="Responda e descubra se você está pronto para fazer renda criando sites com IA para negócios da sua cidade.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;800;900&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@1&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050608;--s:#0F1218;--s2:#151922;--line:rgba(255,255,255,.12);--ink:#F5F2EC;--ink2:#A7ABB5;--or:#FF6B1A;--or2:#FF9A4D;--green:#2BD67B;--red:#ff5a5a}
+*{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+html,body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;min-height:100%}
+body{display:flex;flex-direction:column;align-items:center}
+.wrap{width:100%;max-width:480px;padding:14px 16px calc(40px + env(safe-area-inset-bottom));min-height:100vh}
+.top{display:flex;align-items:center;gap:10px;height:34px}
+.back{background:none;border:0;color:var(--ink);font-size:22px;width:28px;height:28px;cursor:pointer;visibility:hidden}
+.bar{flex:1;height:8px;background:var(--s2);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--or),var(--or2));border-radius:99px;transition:width .4s}
+.step{animation:in .35s ease both;padding-top:20px}
+@keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.tag{display:block;background:rgba(255,107,26,.12);border:1px solid rgba(255,107,26,.35);color:var(--or2);font:800 12px Archivo,sans-serif;letter-spacing:.04em;text-transform:uppercase;text-align:center;padding:12px;border-radius:12px;margin-bottom:18px}
+h1,h2{font-family:Archivo,sans-serif;font-weight:900;line-height:1.1;text-align:center;letter-spacing:-.01em}
+h1{font-size:31px;text-transform:uppercase}
+h2{font-size:25px}
+em,.hl{font-style:normal;color:var(--or)}
+.g{color:var(--green)}
+.sub{color:var(--ink2);text-align:center;font-size:15px;line-height:1.5;margin:12px 0 0}
+.sub b{color:var(--ink)}
+.opts{display:grid;gap:10px;margin-top:22px}
+.opts.two{grid-template-columns:1fr 1fr}
+.opt{display:flex;align-items:center;gap:12px;background:var(--s);border:1.5px solid var(--line);color:var(--ink);font:500 16px Inter,sans-serif;text-align:left;padding:16px;border-radius:14px;cursor:pointer;transition:.15s}
+.opt:active,.opt.sel{border-color:var(--or);background:rgba(255,107,26,.1);transform:scale(.99)}
+.opt .e{font-size:24px;line-height:1}
+.opts.two .opt{flex-direction:column;justify-content:center;text-align:center;padding:22px 10px;font-weight:600}
+.opts.two .opt .e{font-size:44px}
+.btn{display:block;width:100%;background:var(--or);color:#fff;border:0;font:800 17px Archivo,sans-serif;text-transform:uppercase;letter-spacing:.02em;padding:18px;border-radius:14px;cursor:pointer;margin-top:24px;box-shadow:0 8px 30px rgba(255,107,26,.35);animation:pulse 1.8s infinite}
+.btn.green{background:var(--green);color:#04210f;box-shadow:0 8px 30px rgba(43,214,123,.3)}
+@keyframes pulse{50%{transform:scale(1.02)}}
+.card{background:var(--s);border:1px solid var(--line);border-radius:16px;padding:18px;margin-top:16px}
+.card h3{font:800 17px Archivo,sans-serif;margin-bottom:6px}
+.card p{color:var(--ink2);font-size:14.5px;line-height:1.5}
+.big{font:900 56px Archivo,sans-serif;color:var(--or);line-height:1}
+.flow{display:grid;gap:0;margin-top:22px}
+.flow div{display:flex;gap:14px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed var(--line)}
+.flow div:last-child{border:0}
+.flow b{flex:none;width:34px;height:34px;border-radius:50%;background:var(--or);color:#fff;font:900 15px Archivo,sans-serif;display:grid;place-items:center}
+.flow span{font-size:15px;line-height:1.45;color:var(--ink2)}
+.flow span strong{color:var(--ink);display:block;font-size:16px;margin-bottom:2px}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}
+.vs>div{border-radius:14px;padding:14px;font-size:13.5px;line-height:1.45}
+.vs .a{background:rgba(255,90,90,.08);border:1px solid rgba(255,90,90,.3)}
+.vs .d{background:rgba(43,214,123,.08);border:1px solid rgba(43,214,123,.35)}
+.vs h4{font:800 14px Archivo,sans-serif;text-transform:uppercase;margin-bottom:8px}
+.vs .a h4{color:var(--red)}.vs .d h4{color:var(--green)}
+.vs li{margin:0 0 7px 16px;color:var(--ink2)}
+.meter{margin-top:14px}.meter label{font-size:13px;color:var(--ink2);display:flex;justify-content:space-between;margin-bottom:5px}
+.meter i{display:block;height:9px;border-radius:9px;background:var(--s2);overflow:hidden}.meter i s{display:block;height:100%;width:0;border-radius:9px;transition:width 1.2s}
+.res{background:linear-gradient(135deg,var(--green),#17a85c);color:#04210f;font:900 22px Archivo,sans-serif;text-transform:uppercase;text-align:center;padding:22px 16px;border-radius:18px;line-height:1.15}
+.score{display:flex;align-items:center;justify-content:center;gap:16px;margin:22px 0 4px}
+.ring{width:118px;height:118px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--or) calc(var(--p)*1%),var(--s2) 0)}
+.ring span{width:94px;height:94px;border-radius:50%;background:var(--bg);display:grid;place-items:center;font:900 32px Archivo,sans-serif}
+.load{text-align:center;padding-top:60px}
+.load .pct{font:900 64px Archivo,sans-serif;color:var(--or)}
+.load ul{list-style:none;margin-top:26px;text-align:left}
+.load li{padding:10px 0;color:var(--ink2);font-size:15px;opacity:.3;transition:.4s}
+.load li.on{opacity:1;color:var(--ink)}.load li.on::before{content:"✓ ";color:var(--green);font-weight:800}
+.field{margin-top:14px}.field label{display:block;font-size:13px;color:var(--ink2);margin-bottom:6px}
+.field input{width:100%;background:var(--s);border:1.5px solid var(--line);color:var(--ink);font:500 17px Inter,sans-serif;padding:16px;border-radius:12px;outline:0}
+.field input:focus{border-color:var(--or)}
+.err{color:var(--red);font-size:13px;margin-top:10px;text-align:center;min-height:16px}
+.lock{font-size:12.5px;color:var(--ink2);text-align:center;margin-top:12px}
+.price{text-align:center;margin-top:18px}.price s{color:var(--ink2);font-size:17px}.price b{display:block;font:900 52px Archivo,sans-serif;color:var(--green);line-height:1.1}
+.price small{color:var(--ink2);font-size:13px}
+.ul{list-style:none;margin-top:18px}.ul li{padding:9px 0 9px 30px;position:relative;font-size:15px;line-height:1.4;border-bottom:1px solid var(--line)}
+.ul li::before{content:"✓";position:absolute;left:0;color:var(--green);font-weight:900}
+.note{font-size:12px;color:var(--ink3,#6E7380);text-align:center;margin-top:22px;line-height:1.5}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top"><button class="back" id="back" aria-label="Voltar">←</button><div class="bar"><i id="prog"></i></div></div>
+  <div id="app"></div>
+</div>
+<script>
+/* ===== CONFIG ===== */
+const CHECKOUT_URL='https://pay.cakto.com.br/89zpxmz_1043324';
+const REGISTRO_URL='https://assistente.andersonbraga.com/diagnostico/registro'; // log do servidor (só lead e etapas)
+const META_PIXEL_ID=''; // vazio = nada rastreia (versão de teste)
+
+/* ===== FLUXO ===== */
+const S=[
+ {id:'sexo',t:'q',h:'Você é Homem ou Mulher?',intro:true,two:true,o:[['👨','Homem'],['👩','Mulher']]},
+ {id:'idade',t:'q',h:'Qual a sua idade?',o:[['','18-29'],['','30-39'],['','40-49'],['','50 ou mais']]},
+ {id:'device',t:'q',h:'Com o que você pode trabalhar hoje?',o:[['📱','Só com o celular'],['💻','Tenho computador ou notebook'],['📲','Os dois']]},
+ {id:'ia',t:'q',h:'Você já usou inteligência artificial (ChatGPT, Claude, Gemini)?',o:[['🔥','Uso todo dia'],['👍','Já usei algumas vezes'],['🤔','Conheço, mas nunca usei'],['🙅','Nunca usei']]},
+ {id:'negocios',t:'q',h:'Na sua cidade, você conhece negócios locais com site ruim ou sem site nenhum?',sub:'(clínica, dentista, academia, restaurante, advogado...)',o:[['🎯','Conheço vários'],['👀','Conheço alguns'],['❓','Nunca reparei']]},
+ {id:'rede',t:'q',h:'Qual rede social você mais usa?',o:[['','Instagram'],['','WhatsApp'],['','TikTok'],['','Facebook'],['','YouTube']]},
+ {id:'tela',t:'q',h:'Quanto tempo por dia você passa no celular?',o:[['⏳','Menos de 2h'],['🕒','Entre 2 e 3 horas'],['📲','Entre 3 e 4 horas'],['🔥','Mais de 4 horas']]},
+ {id:'i1',t:'info',h:'Você NÃO precisa saber programar',body:`<p class="sub">Hoje a inteligência artificial monta um site completo, bonito e pronto pra publicar. <b>Você só precisa saber dar a direção.</b></p>
+  <div class="card"><div class="big">40 min</div><p style="margin-top:8px">é o tempo para montar um site especulativo de um negócio local usando o método da Máquina de Sites.</p></div>
+  <div class="card"><h3>Como funciona na prática</h3><p>Em vez de ligar pra dono de empresa e implorar pra ele comprar um site, você <b style="color:var(--ink)">faz o site antes</b>, manda pronto no WhatsApp dele e só então fala de preço. É o <span class="hl">Método da Entrega Invertida</span>.</p></div>`},
+ {id:'renda',t:'q',h:'Quanto você ganha hoje, em média, por mês?',o:[['','Menos de R$ 1.500'],['','R$ 1.500 a R$ 3.000'],['','R$ 3.000 a R$ 5.000'],['','Mais de R$ 5.000'],['','Não tenho renda atualmente']]},
+ {id:'contente',t:'q',h:'Você está contente com o que ganha hoje?',o:[['😣','Não dá nem pra pagar as contas direito'],['😕','Nem um pouco contente'],['😐','Poderia estar melhor']]},
+ {id:'deixou',t:'q',h:'Você já deixou de fazer algo importante pra você ou pra sua família por falta de dinheiro?',o:[['💔','Sim, já aconteceu'],['🙂','Não']]},
+ {id:'estresse',t:'q',h:'Com que frequência o dinheiro te preocupa ou estressa?',o:[['','Todos os dias'],['','Algumas vezes por semana'],['','Quando tenho que pagar as contas'],['','Nunca me preocupo']]},
+ {id:'emprego',t:'q',h:'Qual é a sua situação de trabalho hoje?',o:[['🙁','Tenho emprego, mas estou insatisfeito'],['👨‍💻','Faço freelas'],['🙅','Sou autônomo'],['❌','Estou desempregado']]},
+ {id:'i2',t:'info',h:'Renda extra não precisa ser outro emprego',body:`<p class="sub">Quase todo mundo acha que ganhar mais significa <b>trabalhar mais horas</b>. A Máquina de Sites foi desenhada pra caber na vida de quem já está cansado.</p>
+  <div class="vs"><div class="a"><h4>Jeito comum</h4><ul><li>Cursar meses antes de começar</li><li>Montar portfólio do zero</li><li>Cold call e rejeição</li><li>Anúncio pago pra achar cliente</li></ul></div>
+  <div class="d"><h4>Entrega Invertida</h4><ul><li>Instala e começa no mesmo dia</li><li>1º site já vira portfólio</li><li>O dono vê o site pronto antes</li><li>Prospecção pelo WhatsApp</li></ul></div></div>`},
+ {id:'tentou',t:'q',h:'Você já tentou começar algo online pra fazer renda extra?',o:[['💻','Eu já vivo da internet'],['😔','Já tentei, mas não deu certo'],['💭','Nunca comecei, mas já pensei várias vezes'],['🙅','Nunca pensei nisso']]},
+ {id:'trava',t:'q',h:'O que mais te trava na hora de começar uma renda digital?',o:[['🧑‍💻','Achar que preciso saber programar'],['📂','Não ter portfólio nem experiência'],['🗣️','Não saber como vender'],['😨','Medo de ser enganado'],['💸','Achar que custa muito caro']]},
+ {id:'i3',t:'info',h:'Seu bloqueio tem solução',body:`<p class="sub">A Máquina de Sites ataca justamente os 3 bloqueios que mais travam iniciante:</p>
+  <div class="flow"><div><b>1</b><span><strong>Sem portfólio</strong>O primeiro site que você cria já vira a sua vitrine.</span></div>
+  <div><b>2</b><span><strong>Sem saber o que falar</strong>Você recebe o roteiro da mensagem pronto pra mandar.</span></div>
+  <div><b>3</b><span><strong>Sem "vai achar caro"</strong>O dono vê o site pronto antes de ouvir qualquer preço.</span></div></div>`},
+ {id:'aparecer',t:'q',h:'Sabia que dá pra fazer renda criando sites SEM aparecer?',sub:'Sem gravar vídeo, sem mostrar o rosto, sem seguidores.',o:[['🙋','Já quero começar'],['🤯','Não sabia!'],['🔎','Quero descobrir como']]},
+ {id:'diferenca',t:'q',h:'Uma renda extra todo mês faria diferença na sua vida?',o:[['✅','Sim, muita'],['❌','Não faria']]},
+ {id:'primeiro',t:'q',h:'Qual seria a 1ª coisa que você faria se, daqui a 1 mês, entrasse R$ 1.500 a mais por mês?',sub:'(exemplo de cenário, o resultado depende da sua execução)',o:[['🚀','Sairia do meu emprego pra focar nisso'],['👨‍👩‍👧','Daria uma condição melhor pra minha família'],['✈️','Planejaria uma viagem'],['📈','Investiria o dinheiro']]},
+ {id:'tempo',t:'q',h:'Quanto tempo por dia você tem pra uma renda extra?',sub:'(sem sair de casa)',o:[['⏳','Menos de 30 min'],['⏰','30 min a 1h'],['🕒','1 a 2 horas'],['🔥','Mais de 2 horas']]},
+ {id:'i4',t:'info',h:'JÁ PODE SER UMA REALIDADE!',body:`<p class="sub">Estamos calculando o seu perfil para a Máquina de Sites.</p><p class="sub"><b>Com 1 hora por dia</b> já dá pra montar o 1º site e mandar pro 1º dono de negócio, sem largar o seu emprego.</p>`},
+ {id:'motivo',t:'q',h:'Hoje a sua maior motivação é...',o:[['','Renda extra imediata'],['','Sair do emprego atual'],['','Liberdade financeira'],['','Viver da internet']]},
+ {id:'sonho',t:'q',h:'Se você tivesse uma renda extra todo mês, como isso mudaria a sua vida?',o:[['👨‍👩‍👧','Daria uma vida melhor pra minha família'],['🚪','Sairia do emprego atual'],['🌟','Realizaria meus sonhos'],['✈️','Viajaria mais']]},
+ {id:'load',t:'load'},
+ {id:'resultado',t:'result'},
+ {id:'comprometimento',t:'q',h:'Quão disposto(a) você está a começar HOJE?',o:[['🔥','Não vou parar até conseguir'],['🤔','Ainda não tenho certeza se consigo'],['👀','Só estou curioso(a) pra tentar']]},
+ {id:'antesdepois',t:'info',h:'Antes x Depois de ter a Máquina de Sites',body:`<div class="vs"><div class="a"><h4>Antes</h4><ul><li>Renda dependendo de um único salário</li><li>Sem portfólio</li><li>Sem saber como abordar um cliente</li><li>Estresse com as contas</li></ul></div>
+  <div class="d"><h4>Depois</h4><ul><li>Uma habilidade que o mercado local paga</li><li>Sites prontos como vitrine</li><li>Roteiro pra abordar pelo WhatsApp</li><li>Renda extra que você controla</li></ul></div></div>
+  <p class="note" style="margin-top:16px">Resultados variam de pessoa pra pessoa e dependem de dedicação e execução. Não prometemos ganhos.</p>`},
+ {id:'plano',t:'plano'},
+ {id:'lead',t:'lead'},
+ {id:'oferta',t:'oferta'}
+];
+const ROT={sexo:'Cadastro'}; // reservado
+
+/* ===== ESTADO ===== */
+const A={},H=[];let i=0;
+const app=document.getElementById('app'),prog=document.getElementById('prog'),backBtn=document.getElementById('back');
+const Q=new URLSearchParams(location.search);
+const utms=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','src','sck'].reduce((o,k)=>{if(Q.get(k))o[k]=Q.get(k);return o},{});
+function log(ev,extra){try{const p=new URLSearchParams({quiz:'maquina-de-sites',ev,...extra,...utms});fetch(REGISTRO_URL+'?'+p,{mode:'no-cors',keepalive:true}).catch(()=>{})}catch(e){}}
+function px(ev,d){if(META_PIXEL_ID&&window.fbq)fbq('track',ev,d||{})}
+if(META_PIXEL_ID){!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src='https://connect.facebook.net/en_US/fbevents.js';s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script');fbq('init',META_PIXEL_ID);fbq('track','PageView')}
+
+/* ===== RENDER ===== */
+function go(n,push=true){if(push)H.push(i);i=n;render()}
+function render(){
+ const s=S[i];window.scrollTo(0,0);
+ prog.style.width=Math.round(i/(S.length-1)*100)+'%';
+ backBtn.style.visibility=(H.length&&s.t!=='load')?'visible':'hidden';
+ app.innerHTML='';const d=document.createElement('div');d.className='step';app.appendChild(d);
+ ({q,info,load,result,plano,lead,oferta})[s.t==='q'?'q':s.t==='info'?'info':s.t==='load'?'load':s.t==='result'?'result':s.t](s,d);
+}
+function q(s,d){
+ let h='';
+ if(s.intro)h+=`<span class="tag">Preencha o quiz e descubra se você está pronto:</span><h1>Crie sites com <em>IA</em> e venda pra negócios da sua cidade</h1><p class="sub"><b>Descubra se você está qualificado</b> pra fazer renda extra com a Máquina de Sites.</p><p class="sub" style="font-size:12px;letter-spacing:.06em">↓ RESPONDA PARA COMEÇAR ↓</p><h2 style="margin-top:26px;font-size:22px">${s.h}</h2>`;
+ else h+=`<h2>${s.h}</h2>`+(s.sub?`<p class="sub">${s.sub}</p>`:'');
+ h+=`<div class="opts ${s.two?'two':''}">`+s.o.map((o,k)=>`<button class="opt" data-k="${k}">${o[0]?`<span class="e">${o[0]}</span>`:''}<span>${o[1]}</span></button>`).join('')+'</div>';
+ d.innerHTML=h;
+ d.querySelectorAll('.opt').forEach(b=>b.onclick=()=>{b.classList.add('sel');A[s.id]=s.o[b.dataset.k][1];log('resp',{etapa:s.id,resposta:A[s.id]});if(i===0)px('ViewContent');setTimeout(()=>go(i+1),220)});
+}
+function info(s,d){d.innerHTML=`<h2>${s.h}</h2>${s.body}<button class="btn">Continuar</button>`;d.querySelector('.btn').onclick=()=>go(i+1)}
+function load(s,d){
+ const steps=['Analisando suas respostas','Cruzando com o perfil de quem começa bem','Calculando seu nível de prontidão','Montando o seu plano'];
+ d.innerHTML=`<div class="load"><p class="sub">Carregando...</p><div class="pct" id="pct">0%</div><p class="sub">Com base nas suas respostas, estamos calculando o seu potencial na <b>Máquina de Sites</b>.</p><ul>${steps.map(x=>`<li>${x}</li>`).join('')}</ul></div>`;
+ let p=0;const lis=d.querySelectorAll('li');const t=setInterval(()=>{p+=2;d.querySelector('#pct').textContent=p+'%';lis.forEach((l,k)=>{if(p>=(k+1)*25-10)l.classList.add('on')});if(p>=100){clearInterval(t);setTimeout(()=>go(i+1,false),400)}},75);
+}
+function score(){
+ let p=52;const g=(k,m)=>m[A[k]]||0;
+ p+=g('device',{'Os dois':8,'Tenho computador ou notebook':7,'Só com o celular':4});
+ p+=g('ia',{'Uso todo dia':9,'Já usei algumas vezes':7,'Conheço, mas nunca usei':4,'Nunca usei':2});
+ p+=g('negocios',{'Conheço vários':8,'Conheço alguns':5,'Nunca reparei':2});
+ p+=g('tempo',{'Mais de 2 horas':8,'1 a 2 horas':7,'30 min a 1h':5,'Menos de 30 min':3});
+ p+=g('motivo',{'Renda extra imediata':6,'Sair do emprego atual':6,'Liberdade financeira':5,'Viver da internet':5});
+ return Math.min(96,p);
+}
+function result(s,d){
+ const sc=score();A._score=sc;
+ const dev=A.device==='Só com o celular'?'Você pode começar com o que já tem na mão.':'Você já tem a ferramenta principal pra começar.';
+ const iaTxt=['Uso todo dia','Já usei algumas vezes'].includes(A.ia)?'Você já tem intimidade com IA, e isso encurta a sua curva de aprendizado.':'Não tem problema nunca ter usado IA: o método ensina o passo a passo do zero.';
+ const neg=A.negocios==='Nunca reparei'?'Depois da 1ª aula você passa a ver oportunidade em todo negócio sem site da sua cidade.':'Você já enxerga negócios locais que precisam de site, e esse é o seu mercado.';
+ const mot=`Sua maior motivação é <b>${(A.motivo||'').toLowerCase()}</b>: o método foi montado pra gerar o 1º resultado rápido, sem você largar nada.`;
+ d.innerHTML=`<p class="sub" style="margin:0 0 10px">Aqui está o seu resultado...</p>
+ <div class="res">Seu nível de prontidão para a Máquina de Sites</div>
+ <div class="score"><div class="ring" style="--p:${sc}"><span>${sc}%</span></div></div>
+ <div class="meter"><label><span>Ferramentas pra começar</span><span>${A.device==='Só com o celular'?'Boa':'Ótima'}</span></label><i><s style="background:var(--green);width:${A.device==='Só com o celular'?'72':'92'}%"></s></i></div>
+ <div class="meter"><label><span>Intimidade com IA</span><span>${['Uso todo dia','Já usei algumas vezes'].includes(A.ia)?'Alta':'Iniciante'}</span></label><i><s style="background:var(--or);width:${['Uso todo dia','Já usei algumas vezes'].includes(A.ia)?'85':'35'}%"></s></i></div>
+ <div class="meter"><label><span>Mercado ao seu redor</span><span>${A.negocios==='Conheço vários'?'Grande':'Bom'}</span></label><i><s style="background:var(--green);width:${A.negocios==='Conheço vários'?'90':'65'}%"></s></i></div>
+ <h2 style="margin-top:28px;font-size:22px">Você respondeu que...</h2>
+ <div class="card"><h3>📱 Ferramenta</h3><p>${dev}</p></div>
+ <div class="card"><h3>🤖 Inteligência artificial</h3><p>${iaTxt}</p></div>
+ <div class="card"><h3>🏪 Mercado</h3><p>${neg}</p></div>
+ <div class="card"><h3>🎯 Motivação</h3><p>${mot}</p></div>
+ <p class="sub" style="margin-top:22px">Por isso você está <b class="g">qualificado(a)</b>. Clique abaixo e entenda como começar ainda hoje.</p>
+ <button class="btn green">Continuar</button>
+ <p class="note">Esta é uma estimativa de prontidão baseada nas suas respostas, não uma promessa de ganho.</p>`;
+ d.querySelector('.btn').onclick=()=>go(i+1);
+}
+function plano(s,d){
+ d.innerHTML=`<h2>Seu plano para o 1º cliente</h2><p class="sub">Com base em tudo que você respondeu, este é o caminho da <b>Máquina de Sites</b>:</p>
+ <div class="flow">
+  <div><b>1</b><span><strong>Dia 1: monte a máquina</strong>Instale a ferramenta e conecte a hospedagem gratuita. Setup feito uma vez só.</span></div>
+  <div><b>2</b><span><strong>Dia 2: crie o 1º site</strong>Escolha um negócio da sua cidade e gere o site dele com IA em cerca de 40 minutos.</span></div>
+  <div><b>3</b><span><strong>Dia 3: envie pelo WhatsApp</strong>Mande o link pronto pro dono, com o roteiro de mensagem que você recebe no curso.</span></div>
+  <div><b>4</b><span><strong>Depois: feche e repita</strong>Quem gosta do que viu, fecha. Você repete o processo com o próximo negócio.</span></div>
+ </div>
+ <p class="sub" style="margin-top:6px">Você fala com o dono <b>depois</b> de ter o site pronto na mão. Esse é o segredo.</p>
+ <button class="btn">Quero receber o meu plano</button>`;
+ d.querySelector('.btn').onclick=()=>go(i+1);
+}
+function lead(s,d){
+ d.innerHTML=`<h2>Última etapa antes de liberar o seu plano</h2><p class="sub">Informe seu nome e WhatsApp pra gente te enviar o acesso e o passo a passo:</p>
+ <div class="field"><label>Primeiro nome</label><input id="nome" autocomplete="given-name" placeholder="Seu nome"></div>
+ <div class="field"><label>E-mail</label><input id="mail" type="email" autocomplete="email" placeholder="seu@email.com"></div>
+ <div class="field"><label>WhatsApp (com DDD)</label><input id="zap" type="tel" inputmode="numeric" autocomplete="tel" placeholder="(68) 99999-9999"></div>
+ <div class="err" id="err"></div>
+ <button class="btn green">Liberar meu plano</button><p class="lock">🔒 Seus dados ficam seguros e não são compartilhados.</p>`;
+ d.querySelector('.btn').onclick=()=>{
+  const nome=d.querySelector('#nome').value.trim(),mail=d.querySelector('#mail').value.trim(),zap=d.querySelector('#zap').value.replace(/\D/g,'');
+  if(nome.length<2||!/^\S+@\S+\.\S+$/.test(mail)||zap.length<10){d.querySelector('#err').textContent='Preencha nome, e-mail válido e WhatsApp com DDD.';return}
+  A._nome=nome;log('lead',{nome,email:mail,whatsapp:zap,prontidao:A._score,respostas:JSON.stringify(A)});px('Lead');go(i+1);
+ };
+}
+function oferta(s,d){
+ const q=new URLSearchParams({...utms,utm_content:utms.utm_content||'quiz-maquina',...(A._nome?{name:A._nome}:{})}).toString();
+ d.innerHTML=`<span class="tag" style="background:rgba(43,214,123,.1);border-color:rgba(43,214,123,.4);color:var(--green)">Plano liberado, ${A._nome||''}</span>
+ <h2>Seu acesso à <em>Máquina de Sites</em> está pronto</h2>
+ <p class="sub">O método que ensina a criar sites com IA e vender pra negócios da sua cidade usando a <b>Entrega Invertida</b>.</p>
+ <ul class="ul"><li>Estratégia completa da Entrega Invertida</li><li>Instalação da ferramenta passo a passo, sem programar</li><li>Um site criado na prática, do zero ao link pronto</li><li>Roteiro de mensagem pra mandar pro dono do negócio</li><li>Kit do aluno pra começar no mesmo dia</li></ul>
+ <div class="price"><s>De R$ 297</s><b>R$ 97</b><small>pagamento único</small></div>
+ <button class="btn green">Quero a Máquina de Sites</button>
+ <p class="note">Resultados variam e dependem da sua dedicação. Esta é uma versão de teste do quiz.</p>`;
+ d.querySelector('.btn').onclick=()=>{px('InitiateCheckout',{value:97.99,currency:'BRL'});log('checkout',{prontidao:A._score});location.href=CHECKOUT_URL+(CHECKOUT_URL.includes('?')?'&':'?')+q};
+}
+backBtn.onclick=()=>{if(H.length){i=H.pop();// pula telas automáticas
+ while(S[i].t==='load'&&H.length)i=H.pop();render()}};
+render();
+</script>
+</body>
+</html>
